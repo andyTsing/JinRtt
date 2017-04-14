@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/find_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn_back_detail_normal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="找回密码"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <View
+        android:id="@+id/find_viewno"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BABABA"
+        android:layout_below="@id/find_back"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/find_viewno"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+86"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:background="@null"
+                android:id="@+id/find_phone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号"
+                />
+        </LinearLayout>
+
+        <ImageView style="@style/left_drawer_item_line"
+                   android:layout_marginLeft="50dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            >
+            <Button
+                android:id="@+id/find_next"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="下一步"
+                android:textColor="@android:color/holo_red_light"
+                android:background="@drawable/btn_zhucenew"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
